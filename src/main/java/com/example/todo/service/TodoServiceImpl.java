@@ -64,6 +64,5 @@ public class TodoServiceImpl implements TodoService {
         if (deletedRow == 0) {
             throw new ResponseStatusException(HttpStatus.NOT_FOUND, "Does not exist id = " + id);
         }
-
     }
 }

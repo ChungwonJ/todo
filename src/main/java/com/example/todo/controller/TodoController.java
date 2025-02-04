@@ -38,7 +38,7 @@ public class TodoController {
         return ResponseEntity.ok(todoService.findTodoById(id));
     }
     @PutMapping("/{id}")
-    public ResponseEntity<TodoResponseDto> updateMemo(
+    public ResponseEntity<TodoResponseDto> updateTodo(
             @PathVariable Long id,
             @RequestBody TodoUpdateRequestDto requestDto
     ) {
